@@ -1,0 +1,3 @@
+html, css, javascript, bootstrap
+concept of mediaquery to makeit responsive,
+used forrmspree make it responsive

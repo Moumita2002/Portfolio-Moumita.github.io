@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    scroll-behavior:smooth;
+}
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0px;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+
+nav .PortfolioContainer{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Zen Dots', cursive;
+    margin-left: 12px;
+}
+
+nav .PortfolioContainer .Port{
+    color: white;
+}
+
+nav .PortfolioContainer .folio{
+    color:crimson;
+    margin-left: -5px;
+}
+
+nav .MenuContainer{
+    font-size:18px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+
+/* ------------- Home Container -------------*/
+.HomeAnchor{
+    text-decoration: none;
+    color:white;
+}
+
+.BackVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.HomeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:40px;
+}
+.TextContainer{
+    /*border: 2px solid green;*/
+    margin-left: 50px;
+    font-size:35px;
+    margin-top:30px;
+    font-weight: bolder;
+    color:darkgray;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.TextContainer .Name{
+    color:darkgreen;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    text-shadow: 0 0 2px greenyellow,
+    0 0 3px greenyellow,
+    0 0 5px white,
+    0 0 5px white;
+    letter-spacing: 3px;
+}
+
+.Description{
+    font-size: 27px;
+    margin-top:3px;
+    color:indianred;
+}
+
+.Description .Description-text{
+    color:bisque;
+}
+.HomeContainer .ImageContainer .image{
+    height:400px;
+    width: 500px;
+    margin-right: 110px;
+    margin-top: 60px;
+    border-radius: 72% 28% 56% 44% / 9% 68% 32% 91% ;
+    box-shadow: 0 0 50px wheat,
+    0 0 30px greenyellow,
+    0 0 10px white,
+    0 0 5px white;
+}
+
+.Download-Button{
+    padding:10px;
+    width:150px;
+    margin-top:20px;
+    background-color:darkslategrey;
+    border-radius:25px;
+    border:3px solid cadetblue;
+    font-weight: bolder;
+    font-size:15px;
+}
+
+.Download-Button a{
+    color: rgb(151, 205, 207);
+    text-decoration: none;
+}
+
+.Download-Button:hover{
+    opacity: 0.5;
+}
+
+/*--------------- SKILLS --------------------*/
+.SkillsContainer{
+    color:white;
+    margin-top:110px;
+    background-color: rgb(51, 50, 50);
+    padding: 5px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Skillimg h1{
+    padding: 20px;
+}
+.SkillsDetails p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:wheat;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.SkillsMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.MenuName{
+    margin:10px;
+    padding:8px;
+    font-size:18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    background-color:  rgb(51, 50, 50) ;
+    color:white;
+    letter-spacing: 1px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    cursor:pointer;
+    border-bottom:2px solid white;
+}
+
+.MenuName:hover{
+    opacity:0.8;
+    background-color: gray;
+    transform:scale(1.1,1.1);
+    transition:1s all ease-in-out;
+    
+}
+
+#Education ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.EducationName{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: yellow;
+}
+
+.EducationName i{
+    color:burlywood;
+}
+
+.EducationPercentage{
+    font-size: 20px;
+    color:cornsilk;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.EducationPercentage i{
+    color: rgb(209, 146, 159);
+    font-weight: bolder;
+}
+#TechnicalSkills{
+    display: none;
+    list-style-type: none;
+}
+
+#TechnicalSkills ul li{
+    list-style-type: none;
+}
+
+.ListStyle1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    color:rgb(239, 158, 174);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.ListStyle2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    color:rgb(239, 158, 174);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#TechnicalSkills ul li h3{
+    margin-bottom: 10px;
+    color:yellow;
+}
+#SoftSkills{
+    display: none;
+}
+
+#SoftSkills ul li h3{
+    margin-bottom: 10px;
+    color:yellow;
+}
+
+#SoftSkills ul li{
+    list-style-type: none;
+}
+
+h1{
+    text-align: center;
+    font-size:50px;
+    text-decoration: underline;
+    font-family: 'pacifico', cursive;
+    background: linear-gradient(90deg, #00dbde, #ff0090);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+#Achievements{
+    display: none;
+}
+
+#Achievements ul .ListStyle1 .even{
+    color:yellow;
+}
+
+#Achievements ul{
+    list-style-type: none;
+}
+
+#Achievements ul .ListStyle1 li a{
+    color:chartreuse;
+    text-decoration: none;
+}
+
+/*---------------PROJECTS ----------------------*/
+
+.ProjectsContainer{
+    border:1px solid purple;
+    background-image: url('1.png');
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    height:160vh;
+}
+
+.ProjectsContainer h1{
+    margin-top:80px;
+}
+
+.ProjectsContainer .ProjectDetails .Inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide{
+    margin-top:100px;
+    border:5px solid purple;
+    background-color: pink;
+    border-radius:15px;
+    width:450px;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: animate 2s   infinite ;
+}
+
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 25px white;
+    }
+    50%{
+        box-shadow: 0 0 25px crimson;
+
+    }
+    100%{
+        box-shadow: 0 0 25px cadetblue;
+
+    }
+}
+.slide .slideName{
+    background-color: purple;
+    padding: 15px;
+    font-size:25px;
+    color:bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.slide .slideDescription{
+    padding: 15px;
+    margin-top:10px;
+    font-size: 18px;
+    color:crimson;
+}
+
+.slide .slideLinks{
+    display: flex;
+    justify-content: center;
+    border: 2px solid yellowgreen;
+    margin:15px;
+    text-decoration: none;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding:3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.slide .slideLinks:hover{
+    opacity:0.7;
+}
+
+.slide .slideLinks span a{
+    text-decoration: none;
+    font-size: 18px;
+    color: crimson;
+}
+
+.ProjectDetails{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.ProjectDetails .Inner button{
+    
+    border:2px solid yellow;
+    font-size:30px;
+    color:hotpink;
+    background-color: crimson;
+    border-radius:50%;
+    padding: 10px;
+    width:48px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.ProjectDetails .Inner button:hover{
+    opacity:0.8;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+#other{
+    display: none;
+}
+
+/*--------------- CONTACT --------------------*/
+.ContactContainer{
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.ContactLinks{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(pink, skyblue);
+    width: 100%;
+}
+
+.ContactLinks span{
+    text-align: center;
+    font-weight: bolder;
+    font-size:20px;
+    color:crimson;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Contactcolor{
+    background-color: rgb(80, 145, 171);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContactContainer .ContactLinks .Sociallinks {
+    background-color:darkmagenta;
+    border:2px solid pink;
+    font-weight: bolder;
+    font-size:18px;
+    padding:40px;
+    border-radius:50%;
+}
+
+.ContactContainer .ContactLinks .Sociallinks .Links {
+    margin-bottom: 2px;
+}
+
+.ContactDetails{
+    
+    margin-right:100px;
+    padding:40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+    
+    border-radius: 10px;
+    width: 400px;
+}
+
+.ContactDetails form h3{
+    color:rgb(1, 120, 120);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.ContactDetails form label{
+    color:burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.ContactDetails form  .info{
+    margin-bottom: 10px;
+    background-color:darkgray;
+    color: black;
+    border-radius: 5px;
+    width:100%;
+    border:3px solid burlywood;
+    font-size:18px;
+    padding: 3px;
+    border:2px solid cadetblue;
+}
+.bottom{
+    
+    height:50px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+}
+
+.ContactDetails form button{
+    width:100%;
+    background-color: rgb(7, 113, 117);
+    font-weight: bold;
+    padding:8px;
+    border-radius: 20px;
+    border: 3px solid darkgrey;
+    color:darkgrey;
+    font-size:17px;
+    cursor: pointer;
+}
+@media screen and (max-width:991px){
+    .HomeContainer{
+        flex-direction: column;
+    }
+
+    .HomeContainer .ImageContainer .image{
+        height:300px;
+        width:auto;
+        margin-left:100px;
+    }
+   
+    .ContactDetails{
+        margin-right: 0;
+        width:400px;
+    }
+    .ProjectsContainer{
+        height:50vh;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .ProjectsContainer{
+        height:150vh;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
