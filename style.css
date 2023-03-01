@@ -14,8 +14,10 @@ nav{
     align-items: center;
     margin-top:0px;
     padding:20px;
-    position:sticky;
-    top:0;
+    font-size:18px;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
 }
 
 nav .PortfolioContainer{
@@ -35,15 +37,17 @@ nav .PortfolioContainer .folio{
     margin-left: -5px;
 }
 
-nav .MenuContainer{
-    font-size:18px;
-    padding-right: 30px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
+nav .Tab{
+    text-decoration: none;
+    color:aliceblue;
+    margin:10px;
+    padding:10px;
 }
 
-
-
+nav .Tab:hover{
+    border-bottom: 3px solid crimson;
+    opacity:0.7;
+}
 
 
 /* ------------- Home Container -------------*/
@@ -63,6 +67,7 @@ nav .MenuContainer{
     justify-content: space-around;
     align-items: center;
     margin-top:40px;
+    height: 80vh;
 }
 .TextContainer{
     /*border: 2px solid green;*/
@@ -325,7 +330,6 @@ h1{
     background-color: pink;
     border-radius:15px;
     width:450px;
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     animation: animate 2s   infinite ;
 }
@@ -518,8 +522,11 @@ h1{
 @media screen and (max-width:991px){
     /*NAvBAr*/
     nav .PortfolioContainer{
-        font-size: 50px;
+        font-size: 40px;
         padding: 30px;
+    }
+    .Tab{
+        font-size: 30px;
     }
     .offcanvas-body{
         font-size:40px;
@@ -652,7 +659,9 @@ h1{
         font-size: 15px;
         padding: 0px;
     }
-    
+    .Tab{
+        font-size:15px;
+    }
     .navbar-toggler{
         font-size: 15px;
     }
@@ -760,13 +769,6 @@ h1{
         font-size: 17px;
     }
 }
-
-
-
-
-
-
-
 
 
 
