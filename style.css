@@ -570,7 +570,7 @@ h1{
     }
     /*Skills*/
     .SkillsContainer{
-        height:70vh;
+        height:80vh;
     }
     h1{
         margin-top:100px;
@@ -606,7 +606,7 @@ h1{
 
     /*My Projects*/
     .ProjectsContainer{
-        height:150vh;
+        height:130vh;
     }
 }
 
