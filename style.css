@@ -13,8 +13,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-top:0px;
-    position:sticky;
-    top:0;
+    /*position:sticky;
+    top:0;*/
     padding:20px;
     font-size:18px;
     padding-right: 30px;
@@ -117,27 +117,55 @@ nav .Tab:hover{
     padding:10px;
     width:150px;
     margin-top:20px;
-    background-color:darkslategrey;
-    border-radius:25px;
-    border:3px solid cadetblue;
-    font-weight: bolder;
+    background: #444;
+    background: linear-gradient(top, #555, #333);
+    border: none;
+    border-top: 3px solid orange;
+    border-radius: 0 0 0.2em 0.2em;
+    color: #fff;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 1em;
+    font-weight: bold;
     font-size:15px;
 }
-
-.Download-Button a{
-    color: rgb(151, 205, 207);
-    text-decoration: none;
-}
+.Download-Button {
+    animation: wiggle 2s linear infinite;
+  }
+  
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  
 
 .Download-Button:hover{
     opacity: 0.5;
 }
-
 /*--------------- SKILLS --------------------*/
 .SkillsContainer{
     color:white;
     margin-top:110px;
-    background-color: rgb(51, 50, 50);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,57,105,1) 51%, rgba(0,212,255,1) 100%);    background-attachment: fixed;
     padding: 5px;
     background-attachment: fixed;
     background-position: center;
@@ -612,6 +640,144 @@ h1{
     }
 }
 
+.shapes{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+    align-items: center;
+    background: url(https://i.postimg.cc/bNKJvqj1/space1.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    
+}
 
+.shapes .rocket {
+
+    transform: rotate(113deg);
+    z-index: 100 !important;
+    
+}
+
+.shapes .rocket-holder {
+    animation:up-down infinite ;    
+    animation-direction: alternate;
+    animation-duration: 150ms;
+    z-index: 100 !important;
+    position: absolute;
+    margin-top: 220px;
+    left:30%;
+}
+
+ @keyframes up-down {
+    100% {transform: translateY(0px);}
+   0% {transform: translateY(5px);}
+} 
+
+.shapes .shape0 {
+    position: absolute;
+    background: beige;
+    border-radius: 80%;
+    z-index: 8;
+    right: -2000px;
+    animation: rocket ;
+    animation-iteration-count: infinite;
+    margin-top: 250px;
+}
+
+
+
+.shapes .shape1 {
+    height: 3px;
+    width: 30px;   
+    margin-top:50px;
+ 
+    animation-duration: 2s;
+    animation-delay: 700ms;  
+}
+.shapes .shape2 {
+    height: 3px;
+    width: 60px;
+    margin-top: 80px;
+    animation-duration: 3s;
+    animation-delay: 500ms;  
+}
+
+.shapes .shape3 {
+    height: 3px;
+    width: 30px;
+    margin-top:90px;
+    animation-duration: 4s;
+    animation-delay: 150ms;
+
+}
+
+
+.shapes .shape4 {
+    height: 3px;
+    width: 10px;
+    margin-top:300px;
+    animation-duration: 1s;
+    animation-delay: 300ms;
+}
+
+.shapes .shape5 {
+    height: 3px;
+    width: 30px;
+    margin-top: 450px;
+    animation-duration: 5s;
+    
+}
+
+
+@keyframes rocket {
+    0% {transform:translateX(0px)}
+    100% {transform:translateX(-4000px)}
+}
+
+
+
+
+.planets {
+    position: absolute;
+     right: -2000px; 
+     z-index: 8;
+     animation: rocket ;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;  
+
+   
+}
+.planet1 {
+  
+    margin-top: 60px;    
+    animation-delay: 50ms;
+
+}
+
+.planet5 {
+    
+    margin-bottom:230px;
+    animation-delay: 5s;
+}
+
+.planet6 {
+    
+    margin-top:420px;
+    animation-delay: 8s;
+}
+.planet7 {
+    
+    margin-bottom:330px;
+    animation-delay: 9s;
+}
+
+.quote{
+    font-size:30px;
+    font-weight: bolder;
+    color: rgb(204, 204, 204);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 
