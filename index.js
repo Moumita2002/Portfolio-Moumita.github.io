@@ -49,3 +49,19 @@ function nextButton(){
     else
     other.style.display='none';
 }
+
+let showMore=document.getElementById('showMore');
+let showMoreButton=document.getElementById('showMoreButton');
+
+function toggle(){
+    if(showMore.style.display==='none')
+    {
+        showMore.style.display='block';
+        showMoreButton.textContent='Show less';
+    }
+    else
+    {
+        showMore.style.display='none';
+        showMoreButton.textContent='Show More';
+    }
+}
