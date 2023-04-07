@@ -175,7 +175,33 @@ nav .Tab:hover{
 
 .Skillimg h1{
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+
 .SkillsDetails p{
     display: flex;
     justify-content: center;
@@ -202,7 +228,7 @@ nav .Tab:hover{
     font-size:18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
-    background-color:  rgb(51, 50, 50) ;
+    background-color:  rgb(77, 49, 138) ;
     color:white;
     letter-spacing: 1px;
     border-top:none;
@@ -680,7 +706,7 @@ h1{
     background: beige;
     border-radius: 80%;
     z-index: 8;
-    right: -2000px;
+    right: 0px;
     animation: rocket ;
     animation-iteration-count: infinite;
     margin-top: 250px;
@@ -741,7 +767,7 @@ h1{
 
 .planets {
     position: absolute;
-     right: -2000px; 
+     right: 0px; 
      z-index: 8;
      animation: rocket ;
     animation-iteration-count: infinite;
