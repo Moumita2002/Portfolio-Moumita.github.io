@@ -402,7 +402,7 @@ h1{
     flex-direction: column;
 }
 .container {
-    margin-top:120px;
+    margin-top:150px;
     position : relative;
     width : 1100px;
     display : flex;
@@ -415,7 +415,7 @@ h1{
   .container .card {
     position: relative;
     max-width : 450px;
-    height : 215px;  
+    height : 315px;  
     background-color : #fff;
     margin : 30px 10px;
     padding : 20px 15px;
@@ -427,7 +427,7 @@ h1{
     border-radius : 15px;
   }
   .container .card:hover {
-    height : 420px;    
+    height : 520px;    
   }
   
   
@@ -449,11 +449,11 @@ h1{
   
   .container .card .content {
     position : relative;
-    top : -140px;
+    top : -90px;
     padding : 10px 15px;
     color : #111;
     text-align : center;
-    
+    font-size: 20px;
     visibility : hidden;
     opacity : 0;
     transition : 0.3s ease-in-out;
@@ -467,6 +467,7 @@ h1{
      transition-delay: 0.2s;
     
   }
+
 
 .ProjectButton button{
     color: white;
