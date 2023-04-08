@@ -353,7 +353,7 @@ h1{
     height:160vh;*/
      
     background-color: #43345d;
-    min-height : 800px;
+    min-height : 1000px;
     display: flex;
     justify-content: center;
     flex-direction: column;
