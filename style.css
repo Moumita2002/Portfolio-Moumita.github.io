@@ -686,9 +686,9 @@ h1{
     .ProjectsContainer{
         height:100vh;
     }
-    #showMore{
+    #showMoreButton{
         
-     width:60%;
+     width:20%;
     }
 }
 
